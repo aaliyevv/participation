@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Sequence Generator</title>
+</head>
+<body>
+    <input id="start-index" type="number" placeholder="Start Index">
+    <input id="end-index" type="number" placeholder="End Index">
+    <button onclick="displayFibonacci()">Get Fibonacci Sequence</button>
+
+    <script src="Fibonacci.js"></script>
+    <script>
+      function displayFibonacci() {
+        const startIndex = parseInt(document.getElementById('start-index').value);
+        const endIndex = parseInt(document.getElementById('end-index').value);
+        const result = fib(startIndex, endIndex);
+        alert(`Fibonacci Sequence: ${result.join(', ')}`);
+      }
+    </script>
+</body>
+</html>
