@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock, Paper, Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .player {
+            display: inline-block;
+            margin: 0 50px;
+            font-size: 24px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        .winner {
+            font-weight: bold;
+            color: green;
+        }
+        .smiley {
+            display: none;
+            font-size: 32px;
+            margin-top: 10px;
+        }
+        .show {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div id="player1" class="player">Player 1: </div>
+    <div id="player2" class="player">Player 2: </div>
+    <div id="result"></div>
+    <div id="smiley1" class="smiley">😊</div>
+    <div id="smiley2" class="smiley">😊</div>
+</body>
+</html>
